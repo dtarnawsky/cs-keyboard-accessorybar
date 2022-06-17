@@ -1,0 +1,7 @@
+{
+  "name": "cs-accessory-bar",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
