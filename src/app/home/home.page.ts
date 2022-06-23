@@ -20,7 +20,7 @@ export class HomePage {
         return;
       }
 
-      //await Keyboard.hide();
+      await Keyboard.hide();
 
       setTimeout(async () => {
         const ctrl = await this.alert.create({ header: `You clicked ${text}`, buttons: ['OK'] });
