@@ -1,0 +1,19 @@
+<div [class.fadein]="show" [hidden]="!show" class="bar">
+  <ion-toolbar (mousedown)="block(); $event.preventDefault()">
+    <ion-buttons slot="start">
+      <ion-button (mousedown)="choose('balloon', true); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="balloon"></ion-icon>
+      </ion-button>
+      <ion-button (mousedown)="choose('bulb', true); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="bulb"></ion-icon>
+      </ion-button>
+
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button (mousedown)="choose('test', true); $event.preventDefault()">Test</ion-button>
+      <ion-button (click)="choose('accept')">Accept</ion-button>
+      <ion-button (click)="choose('close')">Close</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</div>
