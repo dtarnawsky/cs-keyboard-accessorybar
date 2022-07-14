@@ -29,4 +29,8 @@ export class HomePage {
     });
   }
 
+  show() {
+    Keyboard.show();
+  }
+
 }
