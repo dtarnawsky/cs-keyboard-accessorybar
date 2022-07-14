@@ -34,6 +34,7 @@ export class AccessoryBarComponent implements OnInit, OnDestroy {
     if (block) {
       setTimeout(() => {
         this.clicked.emit(value);
+        console.log('keyboard show()');
         Keyboard.show();
       }, 1);
       return;
@@ -43,13 +44,6 @@ export class AccessoryBarComponent implements OnInit, OnDestroy {
     setTimeout(() => {
       this.clicked.emit(value);
     }, 1);
-  }
-
-  block() {
-    setTimeout(() => {
-      Keyboard.show();
-    }, 1);
-
   }
 
   async ngOnDestroy() {

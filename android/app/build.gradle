@@ -30,6 +30,7 @@ repositories {
 }
 
 dependencies {
+    implementation "androidx.coordinatorlayout:coordinatorlayout:$androidxCoordinatorLayoutVersion"
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation "androidx.appcompat:appcompat:$androidxAppCompatVersion"
     implementation project(':capacitor-android')
