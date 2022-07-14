@@ -41,9 +41,7 @@ export class AccessoryBarComponent implements OnInit, OnDestroy {
     }
 
     this.show = false;
-    setTimeout(() => {
-      this.clicked.emit(value);
-    }, 1);
+    this.clicked.emit(value);
   }
 
   async ngOnDestroy() {
