@@ -7,11 +7,6 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-
-  constructor() {
-
-  }
-
   async clicked() {
     // Add your action for when the accessory bar is closed
   }
