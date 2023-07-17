@@ -1,18 +1,18 @@
 <div [class.fadein]="show" [hidden]="!show" class="bar">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button color="dark" (mousedown)="choose('previous'); $event.preventDefault()">
-        <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
+      <ion-button aria-label="Previous Input" color="dark" (mousedown)="previous(); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="chevron-up"></ion-icon>
       </ion-button>
-      <ion-button color="dark" (mousedown)="choose('next'); $event.preventDefault()">
-        <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
+      <ion-button aria-label="Next Input" color="dark" (mousedown)="next(); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="chevron-down"></ion-icon>
       </ion-button>
     </ion-buttons>
 
     <ion-buttons slot="end">
-      <ion-button color="dark" (mousedown)="choose('test', true); $event.preventDefault()">Test</ion-button>
-      <ion-button color="dark" (click)="choose('accept')">Accept</ion-button>
-      <ion-button color="dark" (click)="choose('close')">Close</ion-button>
+      <!-- <ion-button color="dark" (mousedown)="choose('test', true); $event.preventDefault()">Test</ion-button>
+      <ion-button color="dark" (click)="choose('accept')">Accept</ion-button> -->
+      <ion-button color="dark" (click)="choose(label)">{{label}}</ion-button>
     </ion-buttons>
   </ion-toolbar>
 </div>
