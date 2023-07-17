@@ -10,7 +10,4 @@ export class HomePage {
   async clicked() {
     // Add your action for when the accessory bar is closed
   }
-
-
-
 }
