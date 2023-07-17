@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ChatService } from './chat.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +6,7 @@ import { ChatService } from './chat.service';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor(private chatService: ChatService) { }
+  constructor() { }
 
-  async clicked(value: string) {
-    this.chatService.send(value);
 
-  }
 }

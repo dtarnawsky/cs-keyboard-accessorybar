@@ -5,6 +5,8 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+<!--Note: The accessory bar is placed outside of ion-content-->
+<app-accessory-bar label="Close" (clicked)="clicked()"></app-accessory-bar>
 
 <ion-content class="ion-text-center" [fullscreen]="true">
   <ion-header collapse="condense">
@@ -13,9 +15,22 @@
     </ion-toolbar>
   </ion-header>
 
+  
   <p>Don't like the accessory bar when the keyboard shows up? Check this out by clicking in the input below:</p>
   <ion-input autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></ion-input>
-  <p>{{message}}</p>  
-
-  <ion-button (click)="show()">Show</ion-button>
+  <ion-input aria-label="Name" placeholder="Name"></ion-input>
+  <ion-input aria-label="Phone number" placeholder="Phone"></ion-input>
+  <ion-input aria-label="Address 1" placeholder="Address 1"></ion-input>
+  <ion-input aria-label="Address 2" placeholder="Address 2"></ion-input>
+  <ion-input aria-label="State" placeholder="State"></ion-input>
+  <ion-input aria-label="Zip code" placeholder="ZIP" type="number"></ion-input>
+  <ion-input aria-label="Country" placeholder="Country"></ion-input>  
+  <ion-radio-group value="strawberries">
+    <ion-radio value="grapes">Grapes</ion-radio><br />
+    <ion-radio value="strawberries">Strawberries</ion-radio><br />
+    <ion-radio value="pineapple">Pineapple</ion-radio><br />
+    <ion-radio value="cherries">Cherries</ion-radio>
+  </ion-radio-group>
+  <ion-textarea aria-label="Notes" placeholder="Notes"></ion-textarea>
+  <ion-input aria-label="TShirt Size" placeholder="TShirt Size"></ion-input>
 </ion-content>

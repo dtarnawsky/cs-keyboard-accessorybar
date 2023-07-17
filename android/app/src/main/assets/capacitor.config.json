@@ -1,6 +1,5 @@
 {
 	"appId": "io.ionic.starter",
 	"appName": "cs-accessory-bar",
-	"webDir": "www",
-	"bundledWebRuntime": false
+	"webDir": "www"
 }
