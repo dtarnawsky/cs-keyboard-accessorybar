@@ -1,13 +1,12 @@
 <div [class.fadein]="show" [hidden]="!show" class="bar">
   <ion-toolbar>
     <ion-buttons slot="start">
-      <ion-button color="dark" (mousedown)="choose('balloon'); $event.preventDefault()">
-        <ion-icon slot="icon-only" name="balloon"></ion-icon>
+      <ion-button color="dark" (mousedown)="choose('previous'); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="chevron-back"></ion-icon>
       </ion-button>
-      <ion-button color="dark" (mousedown)="choose('bulb'); $event.preventDefault()">
-        <ion-icon slot="icon-only" name="bulb"></ion-icon>
+      <ion-button color="dark" (mousedown)="choose('next'); $event.preventDefault()">
+        <ion-icon slot="icon-only" name="chevron-forward"></ion-icon>
       </ion-button>
-
     </ion-buttons>
 
     <ion-buttons slot="end">
