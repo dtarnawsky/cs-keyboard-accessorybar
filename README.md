@@ -2,7 +2,8 @@
 
 This sample application contains a component for a custom accessory bar that appears above the onscreen keyboard as shown below.
 
-https://user-images.githubusercontent.com/84595830/175398357-258b11eb-35af-4a75-8c00-04bf6fcd523d.MP4
+
+https://github.com/dtarnawsky/cs-keyboard-accessorybar/assets/84595830/f81dabe1-50f9-43f2-acc9-1080ca2fb2ff
 
 ## Caveat
 
